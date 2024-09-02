@@ -1,0 +1,10 @@
+f44db0100518c65023095a47e71518c12aa1db90		branch 'master' of https://github.com/ultralytics/yolov5
+95dcab3c51b9d95308e52f088ece592b65ad6912	not-for-merge	branch 'add/weights_dir' of https://github.com/ultralytics/yolov5
+07063158dcfab47940bb1cb8a9e8323ff5d644a0	not-for-merge	branch 'exp/scaleFill' of https://github.com/ultralytics/yolov5
+d1ca2673e815de7c2a8d06f75644bd6d49187bb7	not-for-merge	branch 'exp12' of https://github.com/ultralytics/yolov5
+fe5d7f0bd8a92109a010bebcfc3935f2cd83bea6	not-for-merge	branch 'exp13' of https://github.com/ultralytics/yolov5
+a3633d7ffe1312f380c47c4cd5f2bebd59f1c589	not-for-merge	branch 'exp13-nosoft' of https://github.com/ultralytics/yolov5
+343134f768d1718e52f13406cbcfeb4ee7488f6a	not-for-merge	branch 'exp13-soft' of https://github.com/ultralytics/yolov5
+f4fcb232eeed91a97e86acb6478913129214a77f	not-for-merge	branch 'study_activations' of https://github.com/ultralytics/yolov5
+9d8cb69286ee71f7ec1fd06f5a86bad78aeb71b2	not-for-merge	branch 'update/cls-album' of https://github.com/ultralytics/yolov5
+dd510cb2c81a5033c6a919ed895d9530db9bec98	not-for-merge	branch 'yv24_banner_redirect' of https://github.com/ultralytics/yolov5
