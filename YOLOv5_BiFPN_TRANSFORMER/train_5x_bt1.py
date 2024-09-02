@@ -28,6 +28,12 @@ try:
 	print(f"Directory '{results_dir_path}' created successfully.")
 except Exception as e:
 	print(f"An error occurred: {e}")
+	
+# Download and get initial pretrained weights
+file_url = 'https://drive.google.com/file/d/1g05jhxznD3UrTvCRdtTgT1s26wj54R4X/view?usp=drive_link'
+output_file = 'yolo_5x_bt.pt'
+wget.download(file_url, out=output_file)
+print(f'Download complete. File saved as {output_file}')
 
 # Specify paths to  configuration files
 cfg_yaml_path = 'yolo_5x_bt.yaml'
