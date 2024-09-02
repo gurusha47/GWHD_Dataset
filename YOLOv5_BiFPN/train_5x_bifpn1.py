@@ -3,6 +3,7 @@ import subprocess
 import torch 
 import yaml
 import gc
+import wget
 
 # Clear memory of garbage and cache files
 gc.collect()
@@ -28,6 +29,12 @@ try:
 	print(f"Directory '{results_dir_path}' created successfully.")
 except Exception as e:
 	print(f"An error occurred: {e}")
+	
+# Download and get initial pretrained weights
+file_url = 'https://drive.google.com/file/d/1N71VRsCJp6EDDbYO3LTxK78ONjqHNS5d/view?usp=drive_link'
+output_file = 'yolo_5x_bifpn.pt'
+wget.download(file_url, out=output_file)
+print(f'Download complete. File saved as {output_file}')
 
 # Specify paths to  configuration files
 cfg_yaml_path = 'yolo_5x_bifpn.yaml'
