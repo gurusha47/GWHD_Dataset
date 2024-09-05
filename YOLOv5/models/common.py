@@ -123,20 +123,11 @@ class TransformerLayer(nn.Module):
         self.ma = nn.MultiheadAttention(embed_dim=c, num_heads=num_heads)
         self.fc1 = nn.Linear(c, c, bias=False)
         self.fc2 = nn.Linear(c, c, bias=False)
-        self.ln1 = nn.LayerNorm(c)  # Add Layer Normalization
-        self.ln2 = nn.LayerNorm(c)  # Add Layer Normalization
 
     def forward(self, x):
         """Performs forward pass using MultiheadAttention and two linear transformations with residual connections."""
-        x_res = x
-        x = self.ln1(x)  # Apply Layer Normalization
-        x = self.ma(self.q(x), self.k(x), self.v(x))[0] + x_res
-        x_res = x
-        x = self.ln2(x)  # Apply Layer Normalization
-        x = self.fc2(self.fc1(x)) + x_res
-
-        #x = self.ma(self.q(x), self.k(x), self.v(x))[0] + x
-        #x = self.fc2(self.fc1(x)) + x
+        x = self.ma(self.q(x), self.k(x), self.v(x))[0] + x
+        x = self.fc2(self.fc1(x)) + x
         return x
 
 
